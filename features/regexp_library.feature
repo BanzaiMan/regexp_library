@@ -17,6 +17,10 @@ Feature: RegexpLibrary regular expressions
       | IP        | PORT   | 65635           | false  |
       | IP        | PORT   | 66535           | false  |
       | IP        | PORT   | 75535           | false  |
+      # We do *not* test RFC822 extensively.
+      # You should not use regex to validate email addresses
+      | Email     | RFC822 | foo@example.com | true   |
+      | Email     | RFC822 | foo+bar@baz.com | true   |
 
   Scenario Outline: test if a number is a prime with regular expression
     Given an integer <integer>

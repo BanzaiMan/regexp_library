@@ -27,6 +27,10 @@ Or install it yourself as:
       include RegexpLibrary::IP
     end
 
+## To Do
+
+Add more commonly used regular expressions, such as those found in
+Perl's Regexp::Common.
 
 ## Contributing
 

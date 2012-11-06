@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/BanzaiMan/regexp_library.png)](https://travis-ci.org/BanzaiMan/regexp_library)
+
 # RegexpLibrary
 
 RegexpLibrary is a collection of regular expressions for general use.

@@ -1,5 +1,4 @@
 require "regexp_library/version"
 
-module RegexpLibrary
-  # Your code goes here...
-end
+require 'regexp_library/ip'
+require 'regexp_library/math'

@@ -1,7 +1,7 @@
 module RegexpLibrary
   module IP
-    # any decimal number up to 256
     _UP_TO_256 = /(?<!-)(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/
+    # valid IPv4 address in 4 octets written in decimals
     V4 = /\b#{_UP_TO_256}\.#{_UP_TO_256}\.#{_UP_TO_256}\.#{_UP_TO_256}\b/
 
     # any decimal number upto 65535

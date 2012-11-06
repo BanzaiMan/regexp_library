@@ -28,6 +28,12 @@ Feature: RegexpLibrary regular expressions
       | IP        | V6     | 2001:0db8:1234:: | true |
       | IP        | V6     | : | false |
       | IP        | V6     | :1111::5555 | false |
+      | Color     | SHORT  | #123    | true  |
+      | Color     | LONG   | #123456 | true  |
+      | Color     | SHORT  | #FFF    | true  |
+      | Color     | LONG   | #FFFFFF | true  |
+      | Color     | SHORT  | #FFFF   | false |
+      | Color     | LONG   | #FFFF   | false |
       # We do *not* test RFC822 extensively.
       # You should not use regex to validate email addresses
       | Email     | RFC822 | foo@example.com | true   |

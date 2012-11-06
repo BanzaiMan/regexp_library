@@ -19,7 +19,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'regexp_library'
+
+    module Foo
+      include RegexpLibrary::IP
+    end
+
 
 ## Contributing
 

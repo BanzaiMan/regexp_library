@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = RegexpLibrary::VERSION
   gem.authors       = ["Hiro Asari"]
   gem.email         = ["asari.ruby@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A collection of useful regular expressions}
+  gem.summary       = gem.description
+  gem.homepage      = "https://github.com/BanzaiMan/regexp_library"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

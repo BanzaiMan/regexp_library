@@ -40,6 +40,14 @@ Feature: RegexpLibrary regular expressions
       # You should not use regex to validate email addresses
       | Email     | RFC822 | foo@example.com | true   |
       | Email     | RFC822 | foo+bar@baz.com | true   |
+      #
+        | Calendar::W3C | ISO8601DATE | 2012                      | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01                   | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01-01                | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01-01T00:00:00Z      | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01-01T00:00:00-00:00 | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01-01T00:00:00+00:00 | true  |
+        | Calendar::W3C | ISO8601DATE | 2012-01-01T00:00:00.00Z   | true  |
 
   Scenario Outline: test if a number is a prime with regular expression
     Given an integer <integer>

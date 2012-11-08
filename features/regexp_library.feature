@@ -11,6 +11,8 @@ Feature: RegexpLibrary regular expressions
       | IP        | V4     | 256.255.255.255 | false  |
       | IP        | V4     | 0.1.2.256       | false  |
       | IP        | V4     | 1               | false  |
+      | IP        | V4HEX  | ff.ff.ff.ff     | true   |
+      | IP        | V4HEX  | 1               | false  |
       | IP        | PORT   | 65535           | true   |
       | IP        | PORT   | 65536           | false  |
       | IP        | PORT   | 65545           | false  |

@@ -6,6 +6,7 @@ module RegexpLibrary
 
     # valid IPv4 address in 4 octets written in decimals
     V4 = /\b#{to256}(?:\.#{to256}){3}\b/
+    V4HEX = /\b#{hex}{1,2}(?:\.#{hex}{1,2}){3}\b/
 
     # any decimal number upto 65535
     PORT = /\b(?<!-)(?:6553[0-5]|655[0-2][0-9]|65[0-4][0-9][0-9]|6[0-4][0-9][0-9][0-9]|[0-4]?(?:[0-9][0-9]{,3}))\b/
